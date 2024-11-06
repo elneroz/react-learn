@@ -1,4 +1,4 @@
-export const createNote = ({title, body, userId}) => {
+export const createPost = ({title, body, userId}) => {
     return (
         fetch('https://jsonplaceholder.typicode.com/posts', {
             method: 'POST',

@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-export const Note = ({ title, body }) => {
+export const Post = ({ title, body }) => {
     return (
         <li>
             <p>{title}</p>
@@ -9,7 +9,7 @@ export const Note = ({ title, body }) => {
     );
 };
 
-Note.propTypes = {
+Post.propTypes = {
     title: PropTypes.string.isRequired,
     body: PropTypes.string.isRequired,
 };

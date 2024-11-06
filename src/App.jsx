@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react";
-import { Note } from "./components/Note";
-import { getAllNotes } from "./services/notes/getAllNotes.js";
-import { createNote } from "./services/notes/createNote.js";
+import { Post } from "./components/Post.jsx";
+import { getAllPosts } from "./services/Posts/getAllPosts.js";
+import { createPost } from "./services/Posts/createPost.js";
 
 export default function App() {
     const [notes, setNotes] = useState([]);
     const [newNote, setNewNote] = useState("");
 
     useEffect(() =>{
-        getAllNotes()
+        getAllPosts()
             .then((json) => {
                 setNotes(json);
             });
@@ -25,7 +25,7 @@ export default function App() {
             body: newNote,
             userId: 1
         };
-        createNote(noteToAddToState).then((json) => {
+        createPost(noteToAddToState).then((json) => {
             setNotes((prevNotes) => prevNotes.concat(json))
         })
         setNewNote(``); 
@@ -36,7 +36,7 @@ export default function App() {
             <h1>Notes</h1>
             <ol>
                 {notes.map((note) => (
-                    <Note key={note.id} {...note} />
+                    <Post key={note.id} {...note} />
                 ))}
             </ol>
             <form onSubmit={handleSubmit}>
