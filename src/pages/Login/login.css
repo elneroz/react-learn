@@ -1,0 +1,62 @@
+.login-container{
+    display: flex;
+    align-items: center;
+    height: 48rem;
+    background-color: whitesmoke;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0 10rem;
+}
+
+.login-info{
+    display: flex;
+    height: 25rem;
+    width: 30rem;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.social-name{   
+    font-size: 5rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.social-desc{
+    word-wrap: break-word;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+}
+.login-form-container{
+    display: flex;
+    height: 20rem;
+    width: 20rem;
+    background-color: #ffffff;
+    flex-direction: column;
+    justify-content: center;
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.login-form-obj{
+    padding: 1rem;
+    margin: .5rem;
+}
+.login-forgot-password{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: .5rem auto;
+}
+.login-forgot-password a ,a:visited, a:link{
+    font-family: sans-serif;
+    text-decoration: none;
+    color: black;
+}
+.login-forgot-password a:hover{
+    color: brown;
+}
