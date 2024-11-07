@@ -52,6 +52,16 @@
     right: 0;
     margin: .5rem auto;
 }
+.login-form-button{
+    background-color: #4D3022;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer
+}
 .login-forgot-password a ,a:visited, a:link{
     font-family: sans-serif;
     text-decoration: none;

@@ -16,9 +16,9 @@ export const Login = () => {
                     <form className="login-form" onSubmit={handleSubmit}>
                         <input  className="login-form-obj" type="text" placeholder="Correo Electronico" />
                         <input className="login-form-obj" type="password" placeholder="Contreaseña"/>
-                        <button className="login-form-obj">Inision seciar</button>
+                        <button className="login-form-obj login-form-button">Inision seciar</button>
                     </form>
-                    <span className="login-forgot-password"><a href="#">¿Olvidaste tu contraseña?</a></span>
+                    <span className="login-forgot-password "><a href="#">¿Olvidaste tu contraseña?</a></span>
                     
                 </div>
             </div>
